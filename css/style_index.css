@@ -71,3 +71,6 @@ footer{
 footer .social_media{
     margin-bottom: 10px;
 }
+i{
+    cursor: pointer;
+}
