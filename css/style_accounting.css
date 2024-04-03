@@ -67,3 +67,16 @@ footer{
 footer .social_media{
     margin-bottom: 10px;
 }
+table{
+    border-collapse: collapse ;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+table, th ,tr,td{
+    border: 1px solid #555;
+    padding: 20px;
+}
+table tfoot  {
+    border: 3px solid #5c0a0a;
+}
