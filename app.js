@@ -94,4 +94,4 @@ function render() {
     }
     getemp();
     render();
-    // localStorage.clear();
+    localStorage.clear();

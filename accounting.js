@@ -43,10 +43,11 @@ function render(){
     footer.innerHTML =` <tr>
     <th>number of employees:</th>
     <td>${totalEmployees} </td>
-    <th>Total salary of all:</th>
+    <th>Total salary for all:</th>
     <td>${totalsalary} </td>
-    <th>average salary of all:</th>
+    <th>average salary for all:</th>
     <td>${totalAvg || 0} </td>
 </tr>` 
 }
 render()
+
