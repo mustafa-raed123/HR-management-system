@@ -34,22 +34,35 @@ Employee.prototype.calaculatenetsalary = function(){
      let div = document.createElement("div")
      let p = document.createElement("p");
      let sal = document.createElement("p")
-     p.innerHTML = this.name;
+     let pp= document.createElement("span");
+     let pa = document.createElement("div")
+     
+    p.innerHTML += this.id
+     p.innerHTML += `-${this.name}`;
+     pp.innerHTML = `${this.department} - ${this.level}`
      p.style.fontSize = "20px";
      p.style.fontWeight ="bold"
-     sal.innerHTML =` salary: ${this.salary}   netSalaty:  ${this.netsalary} `
+     pp.style.fontSize = "20px";
+     pp.style.fontWeight ="bold"
+     sal.innerHTML =` salary: ${this.salary}    \b   netSalaty:  ${this.netsalary}     `
      sal.style.paddingTop ="10px";
      sal.style.fontWeight ="bold"
      sal.style.color="#fff"
      sal.style.fontSize = "19px"; 
      div.classList.add("empname");
-     div.append(p)
+     pa.append(p)
+     pa.append(pp)
+     pa.style.display = "flex"
+     pa.style.justifyContent = "space-between"
+    div.append(pa)
+    
      div.append(sal)    
      div.style.padding= "10px";
      div.style.marginTop= "10px";
      div.style.backgroundColor = "#00aa88";
      main.appendChild(div)
      console.log(div) 
+
 }
 employees.forEach((e)=>{
    console.log(e.calaculatesalary())
