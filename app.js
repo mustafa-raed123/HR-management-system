@@ -40,7 +40,7 @@ Employee.prototype.calaculatenetsalary = function(){
    document.querySelector("form").addEventListener("submit",(event)=>{
     event.preventDefault();
   let name = event.target.names.value;
-  
+      
   let department = event.target.Department.value;
 
   let level = event.target.level.value;
